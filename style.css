@@ -68,7 +68,7 @@ body, html {
 /* hero */
 
 .titulo {
-  font-family: 'Medula One', cursive;
+   font-family: 'Medula One', cursive;
    font-size: 5rem;
    color: #e48e1e;
    font-weight: bold;
@@ -224,5 +224,48 @@ color: #D95A00;
  text-shadow: #F3BB00 1px 1px 1px;
 font-size: 1.6rem;
 }
+
+/* O JEITO DO NORDESTE */
+
+#titulo4 { 
+ font-family: 'Medula One', cursive;
+   font-size: 5rem;
+   color: #e48e1e;
+   font-weight: bold;
+   text-shadow: #D95A00 2px 2px 2px;
+}
+
+ .text-gradient {
+    background: linear-gradient(90deg, #ff9900, #ff6600, #ff3300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse-gradient 5s infinite alternate;
+  }
+
+  @keyframes pulse-gradient {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: white;
+  }
+
+  .social-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-link:hover {
+    transform: scale(1.2);
+    color: #ff6600;
+  }
+
+  #text-jeito {
+    font-size: 2rem;
+  }
 
 
