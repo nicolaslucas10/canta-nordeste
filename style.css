@@ -16,7 +16,7 @@ body, html {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  border-bottom: 2px solid orange;
+  border-bottom: 4px solid #e48e1e;
   overflow: visible; /* permite que a logo “transborde” */
 }
 
@@ -125,13 +125,19 @@ body, html {
    font-weight: bold;
 }
 
-.divisoria-laranja {
-  height: 3px;
-  background: linear-gradient(to right, #D95A00, #F3BB00, #D95A00);
-  margin: 60px 0 30px 0;
-  border-radius: 10px;
+@keyframes animarGradiente {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
+.divisoria-laranja {
+  height: 4px;
+  background: linear-gradient(270deg, #D95A00, #F3BB00, #D95A00);
+  background-size: 600% 600%;
+  animation: animarGradiente 4s ease infinite;
+  border-radius: 10px;
+  margin: 60px 0 30px 0;
+}
 
 
 /* OQUE VEM POR AI */
