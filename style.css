@@ -168,6 +168,17 @@ a.btn-success:hover {
   margin: 60px 0 30px 0;
 }
 
+/* só adiciona essa classe para esconder antes da animação */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+/* Quando animar (Animate.css padrão) fica com opacidade 1 */
+.animate__animated {
+  opacity: 1 !important;
+  /* força aparecer quando animar */
+}
+
 
 /* OQUE VEM POR AI */
 
@@ -247,9 +258,16 @@ a.btn-success:hover {
   font-size: 1.6rem;
 }
 
+.animate-on-scroll {
+  opacity: 0;
+}
 
+.animate__animated {
+  opacity: 1 !important;
+}
 
-/* O jeito do nordeste */
+/* o jeito do nordeste */
+
 
 /* Título */
 #titulo4 {
@@ -308,11 +326,11 @@ a.btn-success:hover {
   color: #ff6600;
 }
 
-/* Linha divisória */
-.divisoria-laranja {
-  width: 100%;
-  height: 4px;
-  background-color: #e48e1e;
+.animate-on-scroll {
+  opacity: 0;
+}
+.animate__animated {
+  opacity: 1 !important;
 }
 
 
