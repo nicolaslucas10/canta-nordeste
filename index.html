@@ -9,11 +9,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Medula+One&display=swap" rel="stylesheet">
-
-
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -22,95 +20,33 @@
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div class="logo-mobile">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- Logo para desktop -->
+    <div class="logo-desktop d-none d-md-block">
       <img src="imagens/logo_cortada-CANTANORDESTE.png" alt="Logo" />
     </div>
+
+    <!-- Logo para mobile (centralizada acima do nav) -->
+    <div class="logo-mobile d-md-none">
+      <img src="imagens/logo_cortada-CANTANORDESTE.png" alt="Logo" />
+    </div>
+
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#abertura">ABERTURA</a></li>
-        <li class="nav-item"><a class="nav-link" href="#talentos">TALENTOS</a></li>
-        <li class="nav-item"><a class="nav-link" href="#premiacao">PREMIAÇÃO</a></li>
-        <li class="nav-item"><a class="nav-link" href="#redes">REDES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">ABERTURA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">TALENTOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PREMIAÇÃO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">REDES</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero-section text-center d-flex flex-column justify-content-center align-items-center" id="abertura">
-  <div id="particles-js"></div>
-  <div class="hero-content container">
-    <h2 class="hero-title">VEM AÍ O CANTA NORDESTE</h2>
-    <h3 class="text-white">A voz da nossa terra vai ecoar mais alto!</h3>
-    <h3 class="text-white">Um festival arretado que vai revelar os talentos musicais espalhados pelo nosso Nordeste.</h3>
-    <h3 >Tá preparado pra soltar a voz e mostrar sua arte?</h3>
-
-    <div class="row justify-content-center mt-4">
-      <div class="col-md-3 col-10 mb-3">
-        <div class="card card-custom text-white">
-          <div class="card-body">
-            <i class="bi bi-geo-alt-fill fs-3 mb-2"></i>
-            <p>Festival de revelação<br>de talentos.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-10 mb-3">
-        <div class="card card-custom text-white">
-          <div class="card-body">
-            <i class="bi bi-tree-fill fs-3 mb-2"></i>
-            <p>Só pra quem é do Nordeste.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-10 mb-3">
-        <div class="card card-custom text-white">
-          <div class="card-body">
-            <i class="bi bi-mic-fill fs-3 mb-2"></i>
-            <p >Todos os estilos<br>são bem-vindos.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <p class="mt-4" style="color: #e48e1e;">Quer ser o primeiro a saber? Ative nosso canal no WhatsApp e fique por dentro de tudo!</p>
-    <a href="https://wa.me/seunumerowhatsapp" class="btn btn-success btn-lg mt-2 animate__animated animate__pulse" >
-      <i class="bi bi-whatsapp me-3"></i> Ativar Canal
-    </a>
-  </div>
-</section>
-
-<!-- Scripts -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 250, density: { enable: true, value_area: 2000 } },
-        color: { value: "#e48e1e" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5, random: true },
-        size: { value: 3, random: true },
-        line_linked: { enable: false },
-        move: { enable: true, speed: 1.2 }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" }
-        },
-        modes: {
-          repulse: { distance: 40 },
-          push: { particles_nb: 5 }
-        }
-      },
-      retina_detect: true
-    });
-  });
-</script>
 </body>
 </html>
