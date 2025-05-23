@@ -78,7 +78,7 @@ body, html {
 .titulo2 {
   font-family: 'Medula One', cursive;
   font-size: 2rem;
-  color: #D95A00;
+  color: #e48e1e;
   font-weight: bold;
  
 }
@@ -106,7 +106,7 @@ body, html {
 .WhatsApp {
   font-family: 'Medula One', cursive;
   font-size: 1.6rem;
-  color: #D95A00;
+  color: #e48e1e;
   font-weight: bold;
 
 }
@@ -252,7 +252,7 @@ a.btn-success:hover {
 }
 
 #frasefinal {
-  color: #D95A00;
+  color: #e48e1e;
   font-size: 1.6rem;
 }
 
@@ -320,7 +320,7 @@ a.btn-success:hover {
 
 .social-link:hover {
   transform: scale(1.2);
-  color: #ff6600;
+  color: #e48e1e;
 }
 
 .animate-on-scroll {
