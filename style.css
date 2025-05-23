@@ -72,16 +72,53 @@ body, html {
    font-size: 5rem;
    color: #e48e1e;
    font-weight: bold;
-   text-shadow: white 2px 2px 2px;
+   text-shadow: #F3BB00 2px 2px 2px;
 }
 .titulo2 {
   font-family: 'Medula One', cursive;
    font-size: 2rem;
    color: #e48e1e;
    font-weight: bold;
-   text-shadow: white 1px 1px 1px;
+   text-shadow: #F3BB00 1px 1px 1px;
 }
 .hero-top {
   padding-top: 140px; /* Espaço suficiente abaixo da navbar fixa */
 }
+
+.card-custom {
+  background: rgba(128, 128, 128, 0.15); /* cinza translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* leve contorno branco translúcido */
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* efeito esfumaçado */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-custom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+}
+
+.WhatsApp{
+  font-family: 'Medula One', cursive;
+   font-size: 1.6rem;
+   color: #e48e1e;
+   font-weight: bold;
+   text-shadow: #F3BB00 1px 1px 1px;
+}
+.bi-mic-fill,
+.bi-tree-fill,
+.bi-geo-alt-fill {
+  color: #e48e1e; /* exemplo: cor laranja */
+  font-size: 2.5rem; /* exemplo: aumenta o ícone */
+}
+
+#texto-card{
+  font-size: 1.6rem;
+
+   font-weight: bold;
+}
+
 
