@@ -284,60 +284,45 @@ font-size: 1.6rem;
 
 /* footer */
 
-.footer {
+.generic-footer {
   background-color: black;
   border-top: 4px solid #e48e1e;
-  font-size: 1.7rem;
-  padding: 1.5rem 0; /* Controla o espaço vertical do footer */
+  font-size: 1rem;
 }
 
-/* Aumenta só a logo */
-.footer-img {
-  height: 140px; /* Aumente esse valor conforme necessário */
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-
-
-/* Logo + texto */
 .footer-logo {
-  display: flex;
-  align-items: center;
+  height: 150px;
+  width: auto;
 }
 
-
-
-.footer-brand-name {
+.brand-name {
   font-family: 'Medula One', cursive;
+  font-size: 1.5rem;
   color: #e48e1e;
-  font-size: 1.8rem;
-  text-transform: lowercase;
 }
 
-/* Informações institucionais */
-.footer p {
-  margin: 0;
+.footer-nav a {
   color: #dddddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* Redes sociais */
-.footer-social {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.footer-nav a:hover {
+  color: #e48e1e;
 }
 
 .footer-social a {
   color: #ffffff;
-  font-weight: 500;
-  transition: color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #ff6600;
-  transform: scale(1.05);
+  transform: scale(1.2);
+  color: #e48e1e;
+}
+
+.generic-footer .text-muted {
+  color: #e48e1e !important;
 }
 
 
