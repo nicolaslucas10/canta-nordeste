@@ -67,11 +67,19 @@ body, html {
 
 /* hero */
 
-.titulo{
+.titulo {
   font-family: 'Medula One', cursive;
    font-size: 5rem;
    color: #e48e1e;
    font-weight: bold;
+   text-shadow: white 2px 2px 2px;
+}
+.titulo2 {
+  font-family: 'Medula One', cursive;
+   font-size: 2rem;
+   color: #e48e1e;
+   font-weight: bold;
+   text-shadow: white 1px 1px 1px;
 }
 .hero-top {
   padding-top: 140px; /* Espaço suficiente abaixo da navbar fixa */
