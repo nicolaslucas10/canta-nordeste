@@ -1,58 +1,90 @@
 @charset "UTF-8";
 
-/* ======================
-   Reset e fundo geral
-========================= */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #000;
+  background: black;
+  color: white;
+  overflow-x: hidden;
 }
 
-/* ======================
-   Navbar
-========================= */
-nav.navbar {
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: black;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+p{
+  font-weight: bold;
+  font-family: 'Domine', serif;
+}
+h3 {
+  font-weight: bold;
+  font-family: 'Domine', serif;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'Domine', serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #e48e1e;
+  margin-bottom: 20px;
+}
+
+.card-custom {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #e48e1e;
+  border-radius: 12px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card-custom:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+}
+
+/* NAVBAR */
+
+.navbar {
   background-color: #000 !important;
-  border-bottom: 3px solid #E48E1E;
-  padding: 5px 0;
+  border-bottom: 3px solid #e48e1e;
 }
 
 .navbar-nav .nav-link {
-  font-family: 'Fredericka the Great', cursive;
-  font-weight: 400;
-  color: aliceblue;
-  padding: 15px 0;
-  font-size: 1.2rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Domine', serif;
+  color: white;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #E48E1E;
+  color: #e48e1e;
   transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-  .navbar-nav {
-    display: flex;
-    gap: 70px;
-    align-items: center;
-  }
 }
 
 .navbar-toggler {
   border: none;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* ======================
-   Logo (Mobile)
-========================= */
 .logo-mobile {
   position: absolute;
   left: 50%;
@@ -61,7 +93,7 @@ nav.navbar {
 }
 
 .logo-mobile img {
-  height: 145px;
+  height: 140px;
 }
 
 @media (min-width: 768px) {
@@ -70,58 +102,18 @@ nav.navbar {
   }
 }
 
-/* ======================
-   Navbar Mobile
-========================= */
 @media (max-width: 767.98px) {
   .navbar-collapse {
-    background-color: #000;
+    background-color: black;
     border-top: 3px solid #E48E1E;
-    border-bottom: 3px solid #E48E1E;
-    padding: 20px 0;
   }
 
   .navbar-nav {
-    width: 100%;
     text-align: center;
-    position: relative;
   }
 
   .navbar-nav .nav-link {
-    display: block;
-    padding: 22px 0;
-    border-bottom: 1px solid #E48E1E;
-    font-size: 1.2rem;
+    padding: 20px 0;
+    border-bottom: 1px solid #e48e1e;
   }
-
-  .navbar-nav .nav-link:last-child {
-    border-bottom: none;
-  }
-
-  .navbar-nav::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: #E48E1E;
-    width: 80%;
-    margin: 15px auto 0 auto;
-  }
-}
-
-/* ======================
-   Fundo com partículas
-========================= */
-.hero-section {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  padding: 2rem;
-  background-color: #000;
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
 }
