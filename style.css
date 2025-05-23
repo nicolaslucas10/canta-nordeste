@@ -64,3 +64,16 @@ body, html {
     display: none;
   }
 }
+
+/* hero */
+
+.titulo{
+  font-family: 'Medula One', cursive;
+   font-size: 5rem;
+   color: #e48e1e;
+   font-weight: bold;
+}
+.hero-top {
+  padding-top: 140px; /* Espaço suficiente abaixo da navbar fixa */
+}
+
