@@ -10,9 +10,6 @@ body, html {
   overflow-x: hidden;
 }
 
-
-
-
 section {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -27,12 +24,12 @@ section {
   z-index: 0;
   background: black;
 }
+
 .bi-geo-alt-fill,
 .bi-tree-fill,
 .bi-mic-fill {
   color: #e48e1e;
 }
-
 
 .hero-section {
   position: relative;
@@ -41,24 +38,11 @@ section {
   padding-top: 140px;
   padding-bottom: 60px;
 }
-p{
-  font-weight: bold;
-  font-family: 'Medula One', cursive;
-  font-size: 1.7rem;
-}
-.btn{
-  font-weight: bold;
-  font-family: 'Medula One', cursive;
-  font-size: 1.8rem;
-}
-h3 {
-  font-weight: bold;
-  font-family: 'Medula One', cursive;
-  font-size: 2.5rem;
-}
+
 .hero-content {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .hero-title {
@@ -67,7 +51,24 @@ h3 {
   font-size: 5rem;
   color: #e48e1e;
   margin-bottom: 20px;
+}
+
+h3 {
   font-weight: bold;
+  font-family: 'Medula One', cursive;
+  font-size: 2.5rem;
+}
+
+p {
+  font-weight: bold;
+  font-family: 'Medula One', cursive;
+  font-size: 1.7rem;
+}
+
+.btn {
+  font-weight: bold;
+  font-family: 'Medula One', cursive;
+  font-size: 1.8rem;
 }
 
 .card-custom {
@@ -124,18 +125,3 @@ h3 {
   }
 }
 
-@media (max-width: 767.98px) {
-  .navbar-collapse {
-    background-color: black;
-    border-top: 3px solid #E48E1E;
-  }
-
-  .navbar-nav {
-    text-align: center;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 20px 0;
-    border-bottom: 1px solid #e48e1e;
-  }
-}
