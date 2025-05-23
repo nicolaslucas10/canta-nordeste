@@ -4,7 +4,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Medula One', cursive;
   background: black;
   color: white;
   overflow-x: hidden;
@@ -33,6 +33,12 @@ section {
   z-index: 0;
   background: black;
 }
+.bi-geo-alt-fill,
+.bi-tree-fill,
+.bi-mic-fill {
+  color: #e48e1e;
+}
+
 
 .hero-section {
   position: relative;
@@ -43,11 +49,18 @@ section {
 }
 p{
   font-weight: bold;
-  font-family: 'Domine', serif;
+  font-family: 'Medula One', cursive;
+  font-size: 1.7rem;
+}
+.btn{
+  font-weight: bold;
+  font-family: 'Medula One', cursive;
+  font-size: 1.8rem;
 }
 h3 {
   font-weight: bold;
-  font-family: 'Domine', serif;
+  font-family: 'Medula One', cursive;
+  font-size: 2.5rem;
 }
 .hero-content {
   position: relative;
@@ -55,11 +68,12 @@ h3 {
 }
 
 .hero-title {
-  font-family: 'Domine', serif;
+  font-family: 'Medula One', cursive;
   font-weight: bold;
-  font-size: 2.8rem;
+  font-size: 6rem;
   color: #e48e1e;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .card-custom {
@@ -84,9 +98,9 @@ h3 {
 }
 
 .navbar-nav .nav-link {
-  font-family: 'Domine', serif;
+  font-family: 'Medula One', cursive;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   transition: all 0.3s ease;
 }
 
