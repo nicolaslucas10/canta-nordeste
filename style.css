@@ -354,33 +354,31 @@ a.btn-success:hover {
 }
 
 
-/* footer */
-
+/* Footer */
 .generic-footer {
   background-color: black;
-
   font-size: 1rem;
 }
 
 .footer-logo {
-  height: 150px;
+  height: 80px; /* Reduzido para melhor encaixe ao lado do texto */
   width: auto;
 }
 
-.brand-name {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  color: #e48e1e;
+.footer-brand {
+  display: flex;
+  align-items: center;
 }
 
-.footer-nav a {
-  color: #dddddd;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
 }
 
-.footer-nav a:hover {
-  color: #e48e1e;
+.footer-social span {
+  font-size: 1rem;
 }
 
 .footer-social a {
@@ -396,5 +394,3 @@ a.btn-success:hover {
 .generic-footer .text-muted {
   color: #e48e1e !important;
 }
-
-
