@@ -3,7 +3,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Medula One', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   background: black;
   color: white;
 }
@@ -22,9 +22,8 @@ body, html {
 
 
 .navbar-nav .nav-link {
-  font-family: 'Medula One', cursive;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
@@ -68,16 +67,16 @@ body, html {
 /* hero */
 
 .titulo {
-  font-family: 'Medula One', cursive;
-  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
 
 }
 
 .titulo2 {
-  font-family: 'Medula One', cursive;
-  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.1rem;
   color: #e48e1e;
   font-weight: bold;
  
@@ -85,6 +84,10 @@ body, html {
 
 .hero-top {
   padding-top: 140px;
+}
+
+#textvemai {
+  font-size: 1.3rem;
 }
 
 .card-custom {
@@ -104,8 +107,7 @@ body, html {
 }
 
 .WhatsApp {
-  font-family: 'Medula One', cursive;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #e48e1e;
   font-weight: bold;
 
@@ -124,16 +126,11 @@ body, html {
 }
 
 #texto-card {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  
 }
 
-/* Texto destacado */
-.text-highlight {
-  font-size: 1.8rem;
-  font-style: italic;
-  color: #ffddc1;
-}
 
 /* Botão WhatsApp com efeito manual além do Animate.css */
 a.btn-success:hover {
@@ -206,22 +203,22 @@ a.btn-success:hover {
 }
 
 .titulovem, #titulo2 {
-  font-family: 'Medula One', cursive;
-  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
 }
 
 #titulo3 {
-  font-family: 'Medula One', cursive;
-  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
   color: white;
   font-weight: bold;
 }
 
 #h3vem {
-  font-family: 'Medula One', cursive;
-  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
   color: #ffffff;
   font-weight: bold;
 }
@@ -253,7 +250,7 @@ a.btn-success:hover {
 
 #frasefinal {
   color: #e48e1e;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .animate-on-scroll {
@@ -269,8 +266,8 @@ a.btn-success:hover {
 
 /* Título */
 #titulo4 {
-  font-family: 'Medula One', cursive;
-  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
 }
@@ -345,7 +342,7 @@ a.btn-success:hover {
 }
 
 .brand-name {
-  font-family: 'Medula One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   color: #e48e1e;
 }
