@@ -3,9 +3,27 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: black;
+  font-family: 'Archivo', sans-serif;
   color: white;
+}
+
+body {
+  background-image: url('imagens/fundo.PNG'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Overlay escuro */
+  z-index: -1; /* Fica atrás do conteúdo */
 }
 
 /* NAVBAR */
@@ -58,6 +76,7 @@ body, html {
   margin-top: -20px; /* opcional: centraliza visualmente se estiver desalinhada */
 }
 
+
 @media (max-width: 767.98px) {
   .logo-desktop {
     display: none;
@@ -93,7 +112,7 @@ body, html {
 /* hero */
 
 .titulo {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
@@ -101,7 +120,7 @@ body, html {
 }
 
 .titulo2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 0.1rem;
   color: #e48e1e;
   font-weight: bold;
@@ -201,6 +220,19 @@ a.btn-success:hover {
   opacity: 1 !important;
   /* força aparecer quando animar */
 }
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.video-wrapper {
+  max-width: 800px; /* ajuste o tamanho como quiser (em px, %, rem...) */
+  margin: 0 auto;   /* centraliza horizontalmente */
+  border-radius: 10px;
+  overflow: hidden; /* para bordas arredondadas do vídeo */
+}
+
+
 
 
 /* OQUE VEM POR AI */
@@ -229,21 +261,21 @@ a.btn-success:hover {
 }
 
 .titulovem, #titulo2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
 }
 
 #titulo3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 1.2rem;
   color: white;
   font-weight: bold;
 }
 
 #h3vem {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 1.2rem;
   color: #ffffff;
   font-weight: bold;
@@ -292,7 +324,7 @@ a.btn-success:hover {
 
 /* Título */
 #titulo4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
@@ -301,7 +333,6 @@ a.btn-success:hover {
 /* Subtítulo com destaque */
 .text-highlight {
   font-size: 1.8rem;
-  font-style: italic;
   color: #ffddc1;
 }
 
@@ -356,7 +387,6 @@ a.btn-success:hover {
 
 /* Footer */
 .generic-footer {
-  background-color: black;
   font-size: 1rem;
 }
 
