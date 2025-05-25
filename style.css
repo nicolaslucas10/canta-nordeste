@@ -157,7 +157,7 @@ body::before {
 }
 @media (max-width: 768px) {
   .hero-image {
-    height: 40vh; /* Reduz a altura da seção no mobile */
+    height: 45vh; /* Reduz a altura da seção no mobile */
   }
 
   .hero-video {
