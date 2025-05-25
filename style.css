@@ -391,7 +391,7 @@ a.btn-success:hover {
 }
 
 .footer-logo {
-  height: 80px; /* Reduzido para melhor encaixe ao lado do texto */
+  height: 150px; /* Reduzido para melhor encaixe ao lado do texto */
   width: auto;
 }
 
