@@ -364,7 +364,7 @@ a.btn-success:hover {
   -webkit-backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
-  width: 450px; /* 👈 largura fixa que você controla */
+  width: 80%; /* 👈 largura fixa que você controla */
   margin: 0 auto;
 }
 
