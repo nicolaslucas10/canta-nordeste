@@ -3,12 +3,12 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   color: white;
 }
 
 body {
-  background-image: url('imagens/fundo.PNG'); /* Substitua pelo caminho da sua imagem */
+  background-image: url('imagens/bg2.png'); /* Substitua pelo caminho da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body::before {
 
 .navbar-nav .nav-link {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
@@ -110,9 +110,84 @@ body::before {
 }
 
 /* hero */
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('imagens/opcao1.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo {
+  width: 35vw;
+  height: auto;
+}
+
+/* 📱 Ajuste para mobile: logo maior */
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 85vw !important;     /* força a largura total */
+    height: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
+/* ✨ Animações */
+.animated-logo {
+  animation: logoIntro 2s ease-out forwards, logoFloat 6s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes logoIntro {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@media (max-width: 768px) {
+  .hero-image {
+    height: 60vh; /* Reduz a altura da seção no mobile */
+  }
+
+  .hero-video {
+    height: 100%;
+    object-fit: contain; /* Em vez de cobrir toda a área, ajusta o vídeo */
+    opacity: 0.15;       /* Mais leve, menos distração */
+  }
+}
+
+
 
 .titulo {
-  font-family: 'DM Serif Display', serif;
+  font-family:'Anton', sans-serif ;
   font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
@@ -120,7 +195,7 @@ body::before {
 }
 
 .titulo2 {
-  font-family: 'DM Serif Display', serif;
+  font-family:'Anton', sans-serif ;
   font-size: 0.1rem;
   color: #e48e1e;
   font-weight: bold;
@@ -261,21 +336,20 @@ a.btn-success:hover {
 }
 
 .titulovem, #titulo2 {
-  font-family: 'DM Serif Display', serif;
+  font-family: ;
   font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
 }
 
 #titulo3 {
-  font-family: 'DM Serif Display', serif;
   font-size: 1.2rem;
   color: white;
   font-weight: bold;
 }
 
 #h3vem {
-  font-family: 'DM Serif Display', serif;
+  font-family: ;
   font-size: 1.2rem;
   color: #ffffff;
   font-weight: bold;
@@ -324,7 +398,7 @@ a.btn-success:hover {
 
 /* Título */
 #titulo4 {
-  font-family: 'DM Serif Display', serif;
+  font-family: ;
   font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
