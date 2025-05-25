@@ -370,6 +370,14 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.forEach(el => observer.observe(el));
   });
 </script>
+<script>
+  const video = document.querySelector('.hero-video');
+  video.muted = true;
+  video.play().catch(() => {
+    // fallback se o autoplay falhar
+    console.log("Autoplay bloqueado");
+  });
+</script>
 
 
 </body>
