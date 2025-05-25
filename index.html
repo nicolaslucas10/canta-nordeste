@@ -370,6 +370,14 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.forEach(el => observer.observe(el));
   });
 </script>
+<script>
+  const video = document.querySelector(".hero-video");
+  video.addEventListener("ended", () => {
+    video.currentTime = 0;
+    video.play();
+  });
+</script>
+
 
 </body>
 </html>
