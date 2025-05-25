@@ -323,7 +323,7 @@ a.btn-success:hover {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   padding: 30px 20px;
-  height: 100%;
+  height: 90%;
 }
 
 .card-custom:hover {
@@ -363,7 +363,11 @@ a.btn-success:hover {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  width: 450px; /* 👈 largura fixa que você controla */
+  margin: 0 auto;
 }
+
 
 .info-card:hover {
   transform: translateY(-4px) scale(1.02);
