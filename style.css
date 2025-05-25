@@ -140,22 +140,6 @@ body::before {
   z-index: 2;
 }
 
-.hero-logo {
-  width: 35vw;
-  height: auto;
-}
-
-/* 📱 Ajuste para mobile: logo maior */
-@media (max-width: 768px) {
-  .hero-logo {
-    width: 85vw !important;     /* força a largura total */
-    height: auto !important;
-    max-width: 100% !important;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
 
 /* ✨ Animações */
 .animated-logo {
@@ -304,6 +288,11 @@ a.btn-success:hover {
   margin: 0 auto;   /* centraliza horizontalmente */
   border-radius: 10px;
   overflow: hidden; /* para bordas arredondadas do vídeo */
+}
+@media (max-width: 768px) {
+  .hero-top {
+    padding-top: 0px !important; /* ou até 0 se quiser colado no vídeo */
+  }
 }
 
 
