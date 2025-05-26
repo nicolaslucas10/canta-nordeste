@@ -365,10 +365,16 @@ a.btn-success:hover {
 #titulo4 {
   padding: 40px;
   font-size: 3.5rem;
-  color: black;
+  color: #e48e1e;
   font-weight: bold;
 }
 
+@media (max-width: 767.98px) {
+  #titulo4 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+}
 /* Subtítulo com destaque */
 .text-highlight {
   font-size: 1.8rem;
