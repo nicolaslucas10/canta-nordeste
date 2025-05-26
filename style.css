@@ -363,9 +363,8 @@ a.btn-success:hover {
 
 /* Título */
 #titulo4 {
-  font-family: ;
   font-size: 3.5rem;
-  color: #e48e1e;
+  color: black;
   font-weight: bold;
 }
 
@@ -413,7 +412,7 @@ a.btn-success:hover {
 
 .social-link:hover {
   transform: scale(1.2);
-  color: #e48e1e;
+  color: rgba(0, 0, 0, 0.412);
 }
 
 .animate-on-scroll {
