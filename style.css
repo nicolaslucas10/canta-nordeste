@@ -423,23 +423,6 @@ a.btn-success:hover {
   opacity: 1 !important;
 }
 
-#jeito-nordeste {
-  height: 480px; /* ajuste conforme necessário */
-  background-image: url('imagens/bg1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-}
-
-#jeito-nordeste * {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
 
 /* Footer */
 .generic-footer {
@@ -480,4 +463,3 @@ a.btn-success:hover {
 .generic-footer .text-muted {
   color: #e48e1e !important;
 }
-
