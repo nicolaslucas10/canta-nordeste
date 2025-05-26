@@ -363,6 +363,7 @@ a.btn-success:hover {
 
 /* Título */
 #titulo4 {
+  padding: 40px;
   font-size: 3.5rem;
   color: black;
   font-weight: bold;
@@ -406,6 +407,7 @@ a.btn-success:hover {
 
 /* Ícones sociais */
 .social-link {
+  padding: 25px;
   color: white;
   transition: transform 0.3s ease, color 0.3s ease;
 }
