@@ -297,7 +297,6 @@ a.btn-success:hover {
 }
 
 .titulovem, #titulo2 {
-  font-family: ;
   font-size: 3.5rem;
   color: #e48e1e;
   font-weight: bold;
@@ -310,7 +309,6 @@ a.btn-success:hover {
 }
 
 #h3vem {
-  font-family: ;
   font-size: 1.2rem;
   color: #ffffff;
   font-weight: bold;
@@ -433,41 +431,71 @@ a.btn-success:hover {
 
 
 /* Footer */
-.generic-footer {
-  font-size: 1rem;
+.footer-custom {
+  background: none;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-.footer-logo {
-  height: 150px; /* Reduzido para melhor encaixe ao lado do texto */
+.footer-banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-banner {
+  max-height: 50px;
+  height: auto;
   width: auto;
 }
 
-.footer-brand {
-  display: flex;
-  align-items: center;
+.footer-logo-extra {
+  max-height: 100px;
+  height: auto;
+  width: auto;
 }
 
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
+/* Esconde elementos específicos por padrão */
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: inline-block;
 }
 
-.footer-social span {
-  font-size: 1rem;
+/* Estilo da parte dos direitos autorais */
+.copyright-text {
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  color: #ccc;
 }
 
-.footer-social a {
-  color: #ffffff;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
+/* Versão Mobile */
+@media (max-width: 768px) {
+  .footer-banner-wrapper {
+    gap: 0.1rem; /* diminui o espaço entre os elementos */
+    margin-bottom: 0.5rem; /* opcional, pode controlar o espaço do bloco como um todo */
+  }
 
-.footer-social a:hover {
-  transform: scale(1.2);
-  color: #e48e1e;
-}
+  .footer-banner {
+    max-width: 100%;
+    max-height: 110px; /* reduz um pouco a altura se necessário */
+    padding: 0;
+    margin: 0rem 0; /* reduz espaçamento vertical entre as imagens */
+  }
 
-.generic-footer .text-muted {
-  color: #e48e1e !important;
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .copyright-text {
+    font-size: 0.8rem;
+    margin-top: 1rem; /* opcional, ajuste conforme necessidade visual */
+  }
 }
