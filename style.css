@@ -356,6 +356,25 @@ a.btn-success:hover {
   opacity: 1 !important;
 }
 
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+  .info-card {
+    width: 100%;            /* Usa 100% da largura da coluna */
+    padding: 16px 12px;     /* Reduz padding para evitar esticamento */
+    height: auto !important; /* Garante altura automática */
+  }
+
+  #titulo3 {
+    font-size: 1rem;         /* Um pouco menor no mobile */
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
 /* o jeito do nordeste */
 
 
