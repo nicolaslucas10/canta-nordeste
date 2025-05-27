@@ -131,7 +131,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-image {
-    height: 53vh; /* Reduz a altura da seção no mobile */
+    height: 50vh; /* Reduz a altura da seção no mobile */
   }
 
   .hero-video {
