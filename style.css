@@ -8,7 +8,7 @@ body, html {
 }
 
 body {
-  background-image: url('imagens/bgg.png'); /* Substitua pelo caminho da sua imagem */
+  background-color: black; /* Substitua pelo caminho da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
